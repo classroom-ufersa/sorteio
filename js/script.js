@@ -4,6 +4,8 @@ function generateNumber() {
     var range = end - start + 1;
     var randomNumber = Math.floor(Math.random() * range) + parseInt(start);
     document.getElementById("result").innerHTML = randomNumber;
+    return false;
+
 }
 
 document.getElementById("raffle-form").addEventListener("submit", function(event) {
